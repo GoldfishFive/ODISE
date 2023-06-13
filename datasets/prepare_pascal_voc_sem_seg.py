@@ -25,8 +25,8 @@ def convert(input, output):
 
 
 if __name__ == "__main__":
-    dataset_dir = Path(os.getenv("DETECTRON2_DATASETS", "datasets")) / "pascal_voc_d2"
-    voc_dir = Path(os.getenv("DETECTRON2_DATASETS", "datasets")) / "VOCdevkit/VOC2012"
+    dataset_dir = Path("DATASETS") / "pascal_voc_d2"
+    voc_dir = Path("DATASETS") / "VOCdevkit/VOC2012"
     for split in ["training", "validation"]:
         if split == "training":
             img_name_path = voc_dir / "ImageSets/Segmentation/train.txt"

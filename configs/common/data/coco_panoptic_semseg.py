@@ -56,8 +56,9 @@ dataloader.train = L(build_d2_train_dataloader)(
         ],
         image_format="RGB",
     ),
-    total_batch_size=64,
-    num_workers=4,
+    # total_batch_size=64,
+    total_batch_size=1,
+    num_workers=1,
 )
 
 dataloader.test = L(build_d2_test_dataloader)(
